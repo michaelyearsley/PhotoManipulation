@@ -1,0 +1,14 @@
+C:\Users\Micha\source\repos\PhotoManipulator\PhotoManipulator\obj\Debug\PhotoManipulator.csprojAssemblyReference.cache
+C:\Users\Micha\source\repos\PhotoManipulator\PhotoManipulator\obj\Debug\MainWindow.g.cs
+C:\Users\Micha\source\repos\PhotoManipulator\PhotoManipulator\obj\Debug\App.g.cs
+C:\Users\Micha\source\repos\PhotoManipulator\PhotoManipulator\obj\Debug\PhotoManipulator_MarkupCompile.cache
+C:\Users\Micha\source\repos\PhotoManipulator\PhotoManipulator\obj\Debug\PhotoManipulator_MarkupCompile.lref
+C:\Users\Micha\source\repos\PhotoManipulator\PhotoManipulator\bin\Debug\PhotoManipulator.exe.config
+C:\Users\Micha\source\repos\PhotoManipulator\PhotoManipulator\bin\Debug\PhotoManipulator.exe
+C:\Users\Micha\source\repos\PhotoManipulator\PhotoManipulator\bin\Debug\PhotoManipulator.pdb
+C:\Users\Micha\source\repos\PhotoManipulator\PhotoManipulator\obj\Debug\MainWindow.baml
+C:\Users\Micha\source\repos\PhotoManipulator\PhotoManipulator\obj\Debug\PhotoManipulator.g.resources
+C:\Users\Micha\source\repos\PhotoManipulator\PhotoManipulator\obj\Debug\PhotoManipulator.Properties.Resources.resources
+C:\Users\Micha\source\repos\PhotoManipulator\PhotoManipulator\obj\Debug\PhotoManipulator.csproj.GenerateResource.cache
+C:\Users\Micha\source\repos\PhotoManipulator\PhotoManipulator\obj\Debug\PhotoManipulator.exe
+C:\Users\Micha\source\repos\PhotoManipulator\PhotoManipulator\obj\Debug\PhotoManipulator.pdb
