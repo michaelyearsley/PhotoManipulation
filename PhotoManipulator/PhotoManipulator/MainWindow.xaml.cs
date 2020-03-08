@@ -1,18 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using Microsoft.Win32;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Windows.Media;
 
 namespace PhotoManipulator
 {
@@ -21,14 +11,17 @@ namespace PhotoManipulator
     /// </summary>
     public partial class MainWindow : Window
     {
+        string imagepath = string.Empty;
         public MainWindow()
         {
-            InitializeComponent();
+            
+            
         }
 
         private void btnLoad_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog newImage = new OpenFileDialog();
+            imagepath = newImage.FileName;
             newImage.Filter = "All supported graphics|*.jpg;*.jpeg;*.png|" +
               "JPEG (*.jpg;*.jpeg)|*.jpg;*.jpeg|" +
               "Portable Network Graphic (*.png)|*.png";
@@ -36,6 +29,35 @@ namespace PhotoManipulator
             {
                 ImageViewer.Source = new BitmapImage(new Uri(newImage.FileName));
             }
+        }
+
+        private void btnbw_Click(object sender, RoutedEventArgs e)
+        {
+            BitmapImage original = new BitmapImage(new Uri(imagepath));
+            //double w = original.Width;
+            //double h = original.Height;
+            Color p;
+
+            for (int y = 0; y < original.Height; y++)
+            {
+                for (int x = 0; x < original.Width; x++)
+                {
+                    p = original.GetPixel(x, y);
+
+                    int a = p.A;
+                    int r = p.R;
+                    int g = p.G;
+                    int b = p.B;
+
+                    int avg = (a + r + b) / 3;
+                    System.Drawing.Color bw = System.Drawing.Color.FromArgb(a, avg, avg, avg);
+
+                    blackAndWhite.SetPixel(y,x,bw);
+                }
+            }
+            ImageViewer.Source = new BitmapImage(blackAndWhite);
+
+
         }
     }
 }

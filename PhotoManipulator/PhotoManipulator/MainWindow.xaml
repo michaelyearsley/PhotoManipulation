@@ -37,5 +37,6 @@
             <Image x:Name="ImageViewer" Grid.Column="7" Grid.ColumnSpan="5" Grid.Row="1" Grid.RowSpan="7" />
         </Border>
         <Button x:Name="btnLoad" Grid.Column="1" Grid.Row="1" Click="btnLoad_Click">Load</Button>
+        <Button x:Name="btnbw" Grid.Column="3" Grid.Row="1" Click="btnbw_Click" >Black/White</Button>
     </Grid>
 </Window>
